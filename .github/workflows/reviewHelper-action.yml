@@ -8,7 +8,7 @@ on:
   schedule:
     # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
     # Runs every 6 hours
-    - cron:  '0 */8 * * *'
+    - cron:  "0 15 10 * * ? *"
 
 jobs:
   buildQueryMail:
@@ -41,7 +41,7 @@ jobs:
       uses: dawidd6/action-send-mail@v3.6.1
       with:
         # Required mail server address:
-        server_address: smtp.gmail.com
+        server_address: smtp.qq.com
         # Required mail server port:
         server_port: 465
         # Optional (recommended): mail server username:
