@@ -10,7 +10,7 @@ const BASE_URL = "https://api.notion.com/";
 // query settings
 // need to think about how to adjust it 
 const QUERY_NUM = 2;
-const QUERY_KEYS = ['Name', 'Tag', 'Text'];
+const QUERY_KEYS = ['Name', 'Intro', 'Created'];
 
 (async () => {
   // Query
@@ -24,7 +24,7 @@ const QUERY_KEYS = ['Name', 'Tag', 'Text'];
   };
 
   let sorts = [{
-    "property": "Text",
+    "property": "Created",
     "direction": "descending"
   }]
 
