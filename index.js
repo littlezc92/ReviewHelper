@@ -24,7 +24,7 @@ const QUERY_KEYS = ['Name', 'Tag', 'Text'];
   };
 
   let sorts = [{
-    "property": "Created",
+    "property": "Text",
     "direction": "descending"
   }]
 
